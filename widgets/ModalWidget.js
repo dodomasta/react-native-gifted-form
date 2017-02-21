@@ -16,6 +16,9 @@ var TimerMixin = require('react-timer-mixin');
 
 var moment = require('moment');
 
+
+
+
 module.exports = React.createClass({
   mixins: [TimerMixin, WidgetMixin],
 
@@ -76,7 +79,6 @@ module.exports = React.createClass({
       renderScene(navigator) {
         // not passing onFocus/onBlur of the current scene to the new scene
         var {onFocus, onBlur, ...others} = _self.props;
-
         return (
           <GiftedFormModal
             {...others}
@@ -160,6 +162,7 @@ module.exports = React.createClass({
       return React.cloneElement(child, {
         formStyles: this.props.formStyles,
         openModal: this.props.openModal,
+        closeModal: this.props.closeModal,
         formName: this.props.formName,
         navigator: this.props.navigator,
         onFocus: this.props.onFocus,
@@ -194,6 +197,10 @@ module.exports = React.createClass({
     }
 
     this.props.onClose && this.props.onClose();
+
+    if (this.props.closeModal !== null) {
+      this.props.closeModal();
+    }
   },
 
   refreshDisplayableValue() {

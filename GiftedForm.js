@@ -56,6 +56,7 @@ const GiftedForm = React.createClass({
       validators: {},
       defaults: {},
       openModal: null,
+      closeModal: null,
     };
   },
 
@@ -65,6 +66,7 @@ const GiftedForm = React.createClass({
     validators: React.PropTypes.object,
     defaults: React.PropTypes.object,
     openModal: React.PropTypes.func,
+    closeModal: React.PropTypes.func,
   },
 
   componentWillUnmount() {

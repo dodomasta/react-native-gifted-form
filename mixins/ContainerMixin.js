@@ -98,6 +98,7 @@ module.exports = {
         return React.cloneElement(child, {
           formStyles: this.props.formStyles,
           openModal: this.props.openModal,
+          closeModal: this.props.closeModal,
           formName: this.props.formName,
           form: this,
           navigator: this.props.navigator,
