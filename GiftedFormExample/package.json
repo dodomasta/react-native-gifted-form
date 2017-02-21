@@ -1,13 +1,24 @@
 {
-  "name": "GiftedFormExample",
-  "version": "0.0.1",
-  "private": true,
+  "name": "react-native-gifted-form example",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "main": "main.js",
   "scripts": {
-    "start": "node_modules/react-native/packager/packager.sh"
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "jest": {
+    "preset": "jest-exponent"
   },
   "dependencies": {
-    "@exponent/react-native-navigator": "^0.4.1",
-    "react-native": "^0.18.1",
-    "react-native-gifted-form": "0.0.1"
+    "@exponent/ex-navigation": "~2.9.1",
+    "@exponent/samples": "~1.0.2",
+    "exponent": "^14.0.0",
+    "react": "~15.4.0",
+    "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz",
+    "react-native-gifted-form": "ofaltins/react-native-gifted-form"
+  },
+  "devDependencies": {
+    "jest-exponent": "~0.2.1"
   }
 }

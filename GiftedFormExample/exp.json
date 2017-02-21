@@ -1,0 +1,24 @@
+{
+  "name": "react-native-gifted-form example",
+  "description": "No description",
+  "slug": "react-native-gifted-form-example",
+  "privacy": "public",
+  "sdkVersion": "14.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#cccccc",
+  "notification": {
+    "icon": "./assets/icons/notification-icon.png",
+    "color": "#000000"
+  },
+  "loading": {
+    "icon": "./assets/icons/loading-icon.png",
+    "hideExponentText": false
+  },
+  "packagerOpts": {
+    "assetExts": ["ttf"]
+  },
+  "ios": {
+    "supportsTablet": true
+  }
+}
